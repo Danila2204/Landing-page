@@ -48,3 +48,56 @@ p {
     border-radius: 50px;
 }
 // === / global ===
+// === header ===
+.header {
+    background: #F4F9E2;
+}
+
+.logo {
+    color: $brand-background-color;
+    font-weight: bold;
+}
+
+.nav {
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    &__list {
+        color: $brand-text-color;
+        font-weight: 500;
+
+        & > li {
+            &::after {
+                content: "";
+                display: none;
+                height: 1px;
+                width: 50px;
+                background: $brand-text-color;
+            }
+            
+            &:hover {
+                &::after {
+                    display: block;
+                }
+            }
+
+            &:not(:last-child) {
+                margin-right: 25px;
+            }
+
+            a {
+                :hover {
+                    font-weight: bold;
+                    color: #000;
+                }
+            }
+        }
+    }
+    
+    &-button {
+        background: $brand-background-color;
+        color: #fff;
+    }
+}
+
+// === / header ===
