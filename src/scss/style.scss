@@ -6,6 +6,8 @@
 // === variables ===
 $brand-text-color: #22356F;
 $brand-background-color: #62D0DF;
+
+$padding-sefiry: 20px;
 // === / variables ===
 // === global ===
 body {
@@ -15,6 +17,7 @@ body {
 
 .container {
     max-width: 1120px;
+    padding: 0 clamp(10px, 1vw, $padding-sefiry);
 }
 
 p {
@@ -62,6 +65,12 @@ p {
     padding-top: 27px;
     padding-bottom: 27px;
 
+    @media (max-width: 498px) {
+        &>*:not(:last-child) {
+            margin-bottom: $padding-sefiry;
+        }
+    }
+
     &__list {
         color: $brand-text-color;
         font-weight: 500;
@@ -69,26 +78,27 @@ p {
         & > li {
             &::after {
                 content: "";
-                display: none;
+                transition: .5s;
+                display: block;
+                opacity: 0;
                 height: 1px;
-                width: 50px;
+                width: 100%;
                 background: $brand-text-color;
             }
             
             &:hover {
                 &::after {
-                    display: block;
+                    opacity: 100;
                 }
             }
 
             &:not(:last-child) {
-                margin-right: 25px;
+                margin-right: clamp(10px, 1vw, 32px);
             }
 
             a {
                 :hover {
                     font-weight: bold;
-                    color: #000;
                 }
             }
         }
@@ -97,6 +107,12 @@ p {
     &-button {
         background: $brand-background-color;
         color: #fff;
+        transition: .5s;
+
+        &:hover {
+            background: #fff;
+            color: $brand-background-color;
+        }
     }
 }
 
