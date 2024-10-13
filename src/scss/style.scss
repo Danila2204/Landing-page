@@ -215,13 +215,23 @@ h1 {
         color: #FFF;
         grid-template-areas: "content img";
         grid-template-columns: 1.7fr 1fr;
+
+        @media (max-width: 965px) {
+            grid-template:
+            "content" 1fr
+            "img" 1fr
+            ;
+        }
         
         .content {
             padding-top: 150px;
             background: $brand-background-color;
             grid-area: "content";
-        
-            .title {
+
+            @media (max-width: 965px) {
+                padding-left: 20px;         
+                padding-right: 20px;
+                padding-bottom: 20px;                
             }
 
             .subtitle {
