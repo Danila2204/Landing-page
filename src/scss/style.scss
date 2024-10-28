@@ -28,11 +28,11 @@ body {
     font-size: 14px;
 }
 
-.card__title {
+.title-card {
     font-size: 32px;
 }
 
-.second-card__title {
+.title-card-second {
     font-size: 36px;
 }
 
@@ -41,6 +41,34 @@ body {
     height: 50px;
     transition: .5s; 
     font-weight: bold;
+}
+
+.bg-brand {
+    background: $brand-background-color;
+}
+
+.bg-blue {
+    background: #0052C1;
+}
+
+.bg-dark-blue {
+    background: $brand-text-color;
+}
+
+.bg-light-green {
+    background: #C4E769;
+}
+
+.bg-pink {
+    background: #FFE2DE;
+}
+
+.bg-purple {
+    background: #8F00FF;
+}
+
+.bg-light-purple {
+    background: #DEE1FF;
 }
 // === / global ===
 // === header ===
@@ -279,4 +307,73 @@ h1 {
     }
 }
 // === / about-us ===
+// === help ===
+.help {
+    margin-top: 70px;
+    
+    &-title {
+        color: #22356F;
+        opacity: 50%;
+    }
+
+    .container {
+        padding: 0;
+        max-width: none;
+
+        .options {
+
+            &:first-of-type {
+                margin-bottom: 120px;
+            }
+
+            .option {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                flex-grow: 1;
+
+                &-line {
+                    background: #FFF;
+                    width: 70%;
+                }
+
+                &-first {
+                    padding-top: 72px;
+                    height: 360px;
+                }
+
+                &-second {
+                    padding-top: 96px;
+                    height: 480px;
+
+                    &_bg {
+                        background: url("img/Main/Help/card-background.png");
+                    }
+                }
+
+
+                .title {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    max-width: 230px;
+                    color: #FFF;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 20%;
+                        left: -20%;
+                        display: block;
+                        width: 9px;
+                        height: 9px;
+                        border-radius: 50%;
+                        background: #E9B730;
+                    }
+                }
+            }
+        }
+    }
+}
+// === / help ===
 // === / main ===
