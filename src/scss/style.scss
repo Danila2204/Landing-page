@@ -388,13 +388,12 @@ h1 {
 
     .container {
         max-width: none;
-        padding-top: 20px;
-        padding-bottom: 40px;
+        padding: 20px clamp(10px, 1vw, 20px) 40px;
     }
 }
 
 .card {
-    padding: 55px 75px 37px 105px;
+    padding: clamp(25px, 2.5vw, 55px) clamp(35px, 3vw, 75px) clamp(20px, 1.5vw, 37px) clamp(50px, 5vw, 105px);
 
     &__title {
         font-size: 28px;
