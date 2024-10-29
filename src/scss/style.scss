@@ -407,4 +407,46 @@ h1 {
     }
 }
 // === / opportunities ===
+// === get-help ===
+.get-help {
+    
+    .container {
+        padding-left: 0;
+        max-width: none;
+    }
+
+    &__img {
+        flex-basis: 33.3%;
+    }
+
+    &__content {
+        padding: 100px 0 40px clamp(50px, 7vw, 100px);
+        flex-grow: 1;
+    }
+    
+    .content {
+        
+        &__subtitle {
+            
+            &:first-of-type {
+                color: $brand-text-color;
+            }
+            
+            &:last-of-type {
+                color: #FAB63E;
+            }
+        }
+        
+        &__title {
+            margin: 225px 0 150px;
+            color: $brand-text-color;
+            max-width: 675px;
+
+            &_light {
+                color: $brand-background-color;
+            }
+        }
+    }
+}
+// === / get-help ===
 // === / main ===
