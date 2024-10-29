@@ -412,6 +412,7 @@ h1 {
     
     .container {
         padding-left: 0;
+        padding-right: 0;
         max-width: none;
     }
 
@@ -420,7 +421,7 @@ h1 {
     }
 
     &__content {
-        padding: 100px 0 40px clamp(50px, 7vw, 100px);
+        padding: 100px $padding-sefiry 40px clamp($padding-sefiry, 7vw, 100px);
         flex-grow: 1;
     }
     
@@ -449,4 +450,42 @@ h1 {
     }
 }
 // === / get-help ===
+// === smile ===
+.smile {
+    .container {
+        color: #FFF;
+        padding-left: 0;
+        padding-right: 0;
+        max-width: none;
+    }
+
+    &__content {
+        padding: 100px $padding-sefiry 40px clamp($padding-sefiry, 1.5vw, 180px);
+        flex-grow: 1;
+    }
+
+    &__img {
+        flex-basis: 33.3%;
+    }
+
+    .content {
+
+        &__subtitle {
+
+            &:last-child {
+                color: $brand-background-color;
+            }
+        }
+
+        &__text {
+            max-width: 580px;
+            margin-bottom: 90px;
+        }
+
+        &__title {
+            margin: 230px 0 75px;
+        }
+    }
+}
+// === / smile ===
 // === / main ===
