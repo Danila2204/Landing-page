@@ -383,4 +383,29 @@ h1 {
     }
 }
 // === / help ===
+// === opportunities ===
+.opportunities {
+
+    .container {
+        max-width: none;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+}
+
+.card {
+    padding: 55px 75px 37px 105px;
+
+    &__title {
+        font-size: 28px;
+        color: $brand-text-color;
+        margin-bottom: 28px;
+    }
+
+    &__text {
+        color: $brand-text-color;
+        max-width: 300px;
+    }
+}
+// === / opportunities ===
 // === / main ===
