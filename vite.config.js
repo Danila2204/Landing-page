@@ -1,7 +1,7 @@
 export default {
   root: "./src",
   build: {
-    outDir: '../root',
+    outDir: '../docs',
     rollupOptions: {
       output: {
         entryFileNames: "assets/js/app.js",
